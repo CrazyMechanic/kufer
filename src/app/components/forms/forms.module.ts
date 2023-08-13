@@ -6,7 +6,6 @@ import {SignUpComponent} from './sign-up/sign-up.component';
 import {LoginComponent} from './login/login.component';
 import {FormContainerComponent} from "./form-container/form-container.component";
 
-
 @NgModule({
   declarations: [
     SignUpComponent,
