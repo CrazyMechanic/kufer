@@ -1,3 +1,19 @@
 .container {
-  
+  width: 530px;
+  height: 846px;
+  margin-inline: auto;
+  padding-top: 20px;
+  background-color: rgba(240, 128, 128, 0.39);
+}
+
+.cancel {
+  position: absolute;
+}
+
+.logo {
+  width: 108px;
+  margin-inline: auto;
+
+  &__img {
+  }
 }
