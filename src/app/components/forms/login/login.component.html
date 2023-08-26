@@ -1,8 +1,34 @@
 <div class="container">
-  <button></button>
-  <div class="logo">
-    <img alt="" src="">
-    <p></p>
-    <p></p>
+  <div class="social__container">
+    <p class="social__text">Continue with Google or Facebook</p>
+
+    <div class="social">
+      <a class="social__link" href="/">
+        <img alt="Google" class="social__link-img" src="assets/img/google-900x900.png">
+        <p class="social__link-text">Google</p>
+      </a>
+
+      <a class="social__link" href="/">
+        <img alt="Facebook" class="social__link-img" src="assets/img/facebook-512x512.png">
+        <p class="social__link-text">Facebook</p>
+      </a>
+    </div>
   </div>
+
+  <form class="form__container">
+    <p class="form__text">Or use e-mail</p>
+
+    <div class="form__item">
+      <input class="form__input" placeholder="" type="text">
+      <label class="form__label">{{placeholder.email}}</label>
+    </div>
+
+    <div class="form__item">
+      <input class="form__input" placeholder="" type="text">
+      <label class="form__label">{{placeholder.password}}</label>
+      <img alt="#" class="visibility" height="17" ngSrc="assets/img/Visibility.svg" width="24">
+    </div>
+
+    <button class="btn">Login</button>
+  </form>
 </div>
