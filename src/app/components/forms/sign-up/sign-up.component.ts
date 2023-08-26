@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {FORM_PLACEHOLDERS} from "../../../data/form-data";
 
 @Component({
   selector: 'app-sign-up',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-up.component.scss']
 })
 export class SignUpComponent {
-
+  placeholder = FORM_PLACEHOLDERS
 }

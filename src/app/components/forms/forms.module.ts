@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
-import {FormsRoutingModule} from './forms-routing.module';
-import {SignUpComponent} from './sign-up/sign-up.component';
-import {LoginComponent} from './login/login.component';
-import {FormContainerComponent} from "./form-container/form-container.component";
+import { FormsRoutingModule } from './forms-routing.module';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
+import { FormContainerComponent } from './form-container/form-container.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import {FormContainerComponent} from "./form-container/form-container.component"
   imports: [
     CommonModule,
     FormsRoutingModule,
+    NgOptimizedImage,
   ],
 })
 export class FormsModule {
