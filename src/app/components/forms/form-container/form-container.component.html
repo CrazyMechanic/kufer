@@ -33,11 +33,13 @@
   </div>
 
   <div class="action__container">
-    <div class="action" id="action__signup">Sign Up</div>
+    <a [ngClass]="{ 'active-bg': isSignUpActive }" [routerLinkActive]="'active'" [routerLink]="['sign-up']"
+       class="action"
+       id="action__signup">Sign Up</a>
 
-    <div class="action" id="action__login">Login</div>
+    <a [ngClass]="{ 'active-bg': isLoginActive }" [routerLinkActive]="'active'" [routerLink]="['login']" class="action"
+       id="action__login">Login</a>
   </div>
 
-  <!--  <router-outlet></router-outlet>-->
-  <app-login></app-login>
+  <router-outlet></router-outlet>
 </div>

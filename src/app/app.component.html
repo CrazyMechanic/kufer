@@ -1,1 +1,3 @@
-<app-form-container></app-form-container>
+<a (click)="toggleForm($event)" class="open-form" href="#">Open FORM</a>
+
+<app-form-container *ngIf="isFormVisible"></app-form-container>

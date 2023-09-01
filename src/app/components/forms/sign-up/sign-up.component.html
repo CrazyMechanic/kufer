@@ -1,37 +1,39 @@
 <form class="form__container">
+  <div class="form__item">
+    <input class="form__input" placeholder="" type="text">
+    <label class="form__label">{{label.name}}</label>
+  </div>
+
   <!--  <div class="form__item">-->
-  <!--    <input class="form__input" placeholder="{{placeholder.name}}" type="text">-->
+  <!--    <input (click)="toggleLabel('name')" class="form__input" placeholder="{{placeholder.name}}" type="text">-->
+  <!--    <label [ngClass]="{ 'hidden': labelVisibility['name'] }" class="form__label">{{label.name}}</label>-->
   <!--  </div>-->
 
   <div class="form__item">
     <input class="form__input" placeholder="" type="text">
-    <label class="form__label">{{placeholder.name}}</label>
+    <label class="form__label">{{label.lastName}}</label>
   </div>
 
   <div class="form__item">
     <input class="form__input" placeholder="" type="text">
-    <label class="form__label">{{placeholder.lastName}}</label>
+    <label class="form__label">{{label.email}}</label>
   </div>
 
   <div class="form__item">
     <input class="form__input" placeholder="" type="text">
-    <label class="form__label">{{placeholder.email}}</label>
+    <label class="form__label">{{label.phone}}</label>
   </div>
 
   <div class="form__item">
     <input class="form__input" placeholder="" type="text">
-    <label class="form__label">{{placeholder.phone}}</label>
+    <label class="form__label">{{label.password}}</label>
+    <img alt="#" class="visibility visible" height="17" ngSrc="assets/img/Visibility.svg" width="24">
+    <img alt="#" class="no-visible" src="assets/img/no-Visibility.svg">
   </div>
 
   <div class="form__item">
     <input class="form__input" placeholder="" type="text">
-    <label class="form__label">{{placeholder.password}}</label>
-    <img alt="#" class="visibility" height="17" ngSrc="assets/img/Visibility.svg" width="24">
-  </div>
-
-  <div class="form__item">
-    <input class="form__input" placeholder="" type="text">
-    <label class="form__label">{{placeholder.confirm}}</label>
+    <label class="form__label">{{label.confirm}}</label>
     <img alt="#" class="visibility" height="17" ngSrc="assets/img/Visibility.svg" width="24">
   </div>
 
