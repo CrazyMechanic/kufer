@@ -1,10 +1,11 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {FormsModule} from './components/forms/forms.module';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { CreateAnItemComponent } from './components/create-an-item/create-an-item.component';
+import { FormsModule } from '@angular/forms';
+import { FormModule } from './components/forms/form.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import { CreateAnItemComponent } from './components/create-an-item/create-an-ite
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    FormModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: []
+  exports: [],
 })
 export class AppModule {
 }

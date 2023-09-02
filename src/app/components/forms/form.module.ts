@@ -23,5 +23,5 @@ import { FormContainerComponent } from './form-container/form-container.componen
     NgOptimizedImage,
   ],
 })
-export class FormsModule {
+export class FormModule {
 }

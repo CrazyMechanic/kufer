@@ -17,9 +17,24 @@
       The first photo will be displayed on the cover</p>
     <div class="photo__item-container">
       <div class="photo__item">Add photo</div>
-      <div class="photo__item"></div>
-      <div class="photo__item"></div>
-      <div class="photo__item"></div>
+      <div class="photo__item">
+        <img alt="#" class="photo__item-img" src="assets/img/icon-photo.svg">
+      </div>
+      <div class="photo__item">
+        <img alt="#" class="photo__item-img" src="assets/img/icon-photo.svg">
+      </div>
+      <div class="photo__item">
+        <img alt="#" class="photo__item-img" src="assets/img/icon-photo.svg">
+      </div>
+    </div>
+  </div>
+
+  <div class="details">
+    <h3 class="details__title">Describe the product in more detail</h3>
+    <textarea (input)="countWords()" [(ngModel)]="inputText" class="details__input" type="text"></textarea>
+    <div class="details__characters">
+      <p>Write another 100 characters</p>
+      <p>{{ wordCount }} / {{ maxWords }}</p>
     </div>
   </div>
 </div>
