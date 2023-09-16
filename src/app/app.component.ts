@@ -9,10 +9,16 @@ export class AppComponent {
   title = 'kufer';
 
   isFormVisible: boolean = false;
-  
+  isItemVisible: boolean = false;
+
   toggleForm(event: Event) {
     event.preventDefault();
     this.isFormVisible = !this.isFormVisible;
+  }
+
+  toggleItem(event: Event): void {
+    event.preventDefault();
+    this.isItemVisible = !this.isItemVisible;
   }
 
 }

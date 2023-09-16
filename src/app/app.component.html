@@ -1,5 +1,6 @@
 <a (click)="toggleForm($event)" class="open-form" href="#">Open FORM</a>
+<a (click)="toggleItem($event)" class="open-item" href="#">Open Item</a>
 
 <app-form-container *ngIf="isFormVisible"></app-form-container>
 
-<app-create-an-item></app-create-an-item>
+<app-create-an-item *ngIf="isItemVisible"></app-create-an-item>
