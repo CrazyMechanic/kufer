@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #7c98a4;
+}
+
+//--------------------------------------
+p {
+  margin: 0;
+}
+
+.home {
+  &__container {
+    padding-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 298px);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 32px;
+    background-color: #F9F9F9;
+  }
+
+  &__item {
+    &-container {
+      display: grid;
+      gap: 16px;
+      background-color: #FFFFFF;
+    }
+
+    &-about {
+      display: grid;
+      gap: 12px;
+    }
+
+    &-img {
+      width: 298px;
+      height: 186px;
+    }
+
+    &-price {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 21px;
+
+      &-container {
+        padding-inline: 12px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &-title {
+      color: #070A0F;
+      font-size: 20px;
+      line-height: 21px;
+
+      &-container {
+        padding-inline: 12px;
+      }
+    }
+
+    &-time {
+      color: rgba(7, 10, 15, 0.50);
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+.btn {
+  width: 404px;
+  height: 54px;
+  margin-inline: auto;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid #00478F;
+  color: #00478F;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &__container {
+    padding: 80px 0;
+    background-color: #F9F9F9;
+  }
+}

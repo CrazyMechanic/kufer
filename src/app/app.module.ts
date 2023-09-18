@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { CreateAnItemComponent } from './components/create-an-item/create-an-item.component';
 import { FormsModule } from '@angular/forms';
 import { FormModule } from './components/forms/form.module';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateAnItemComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
