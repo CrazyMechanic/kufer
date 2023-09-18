@@ -7,12 +7,14 @@ import { CreateAnItemComponent } from './components/create-an-item/create-an-ite
 import { FormsModule } from '@angular/forms';
 import { FormModule } from './components/forms/form.module';
 import { HomeComponent } from './components/home/home.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateAnItemComponent,
     HomeComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

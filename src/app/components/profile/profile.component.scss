@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #7c98a4;
+}
+
+//--------------------------------------
+
+.container {
+  padding-bottom: 160px;
+  background-color: #F9F9F9;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 189px;
+    margin-bottom: 4px;
+    background-color: #FFFFFF;
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-name {
+      margin: 0;
+    }
+  }
+}
