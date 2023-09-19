@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { FormModule } from './components/forms/form.module';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { ProfileEditingComponent } from './components/profile-editing/profile-editing.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     CreateAnItemComponent,
     HomeComponent,
     ProfileComponent,
+    ProfileEditingComponent,
   ],
   imports: [
     BrowserModule,
