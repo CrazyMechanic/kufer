@@ -11,6 +11,7 @@ export class AppComponent {
   isFormVisible: boolean = false;
   isItemVisible: boolean = false;
   isHomeVisible: boolean = false;
+  isProfileVisible: boolean = false;
 
   toggleForm(event: Event) {
     event.preventDefault();
@@ -25,6 +26,11 @@ export class AppComponent {
   toggleHome(event: Event): void {
     event.preventDefault();
     this.isHomeVisible = !this.isHomeVisible;
+  }
+
+  toggleProfile(event: Event): void {
+    event.preventDefault();
+    this.isProfileVisible = !this.isProfileVisible;
   }
 
 }
