@@ -9,7 +9,8 @@ import { FormModule } from './components/forms/form.module';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ProfileEditingComponent } from './components/profile-editing/profile-editing.component';
-import { ToggleProfileEditing } from './servises/toggle-profile-editing';
+import { TogglePasswordEditing, ToggleProfileEditing } from './servises/toggle-profile-editing';
+import { PasswordEditingComponent } from './components/password-editing/password-editing.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ToggleProfileEditing } from './servises/toggle-profile-editing';
     HomeComponent,
     ProfileComponent,
     ProfileEditingComponent,
+    PasswordEditingComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,10 @@ import { ToggleProfileEditing } from './servises/toggle-profile-editing';
     FormsModule,
     FormModule,
   ],
-  providers: [ToggleProfileEditing],
+  providers: [
+    ToggleProfileEditing,
+    TogglePasswordEditing,
+  ],
   bootstrap: [AppComponent],
   exports: [],
 })

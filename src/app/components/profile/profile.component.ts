@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToggleProfileEditing } from '../../servises/toggle-profile-editing';
+import { TogglePasswordEditing, ToggleProfileEditing } from '../../servises/toggle-profile-editing';
 
 @Component({
   selector: 'app-profile',
@@ -8,7 +8,8 @@ import { ToggleProfileEditing } from '../../servises/toggle-profile-editing';
 })
 export class ProfileComponent {
 
-  constructor(public toggleProfileEditing: ToggleProfileEditing) {
+  constructor(public toggleProfileEditing: ToggleProfileEditing,
+              public togglePasswordEditing: TogglePasswordEditing) {
   }
 
 }

@@ -17,7 +17,6 @@
     </div>
 
     <img (click)="toggleProfileEditing.toggleProfileEditing($event)" alt="setting" src="assets/img/profile/Setting.svg">
-    <!--    <app-profile-editing *ngIf="toggleProfileEditing.isProfileEditingVisible"></app-profile-editing>-->
   </div>
 
   <div class="settings__container">
@@ -28,7 +27,8 @@
         <p class="settings__item-text">Reset Password</p>
       </div>
 
-      <img alt="setting" class="settings__item-icon" src="assets/img/profile/Setting.svg">
+      <img (click)="togglePasswordEditing.togglePasswordEditing($event)" alt="setting" class="settings__item-icon"
+           src="assets/img/profile/Setting.svg">
     </div>
 
     <div class="settings__item-container">
@@ -64,3 +64,5 @@
 </div>
 
 <app-profile-editing *ngIf="toggleProfileEditing.isProfileEditingVisible"></app-profile-editing>
+
+<app-password-editing *ngIf="togglePasswordEditing.isPasswordEditingVisible"></app-password-editing>

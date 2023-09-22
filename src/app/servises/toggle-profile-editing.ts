@@ -6,3 +6,12 @@ export class ToggleProfileEditing {
     this.isProfileEditingVisible = !this.isProfileEditingVisible;
   }
 }
+
+export class TogglePasswordEditing {
+  public isPasswordEditingVisible!: boolean;
+
+  public togglePasswordEditing(event: Event): void {
+    event.preventDefault();
+    this.isPasswordEditingVisible = !this.isPasswordEditingVisible;
+  }
+}
