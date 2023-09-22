@@ -9,6 +9,7 @@ import { FormModule } from './components/forms/form.module';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ProfileEditingComponent } from './components/profile-editing/profile-editing.component';
+import { ToggleProfileEditing } from './servises/toggle-profile-editing';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { ProfileEditingComponent } from './components/profile-editing/profile-ed
     FormsModule,
     FormModule,
   ],
-  providers: [],
+  providers: [ToggleProfileEditing],
   bootstrap: [AppComponent],
   exports: [],
 })

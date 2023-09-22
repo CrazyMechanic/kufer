@@ -1,12 +1,12 @@
-<div class="overlay">
+<div class="modal">
 
   <div class="editing__container">
     <div class="editing__title-container">
-      <img alt="arrow" src="assets/img/editing/Arrow%20.svg">
+      <img (click)="closeEditing()" alt="arrow" src="assets/img/editing/Arrow%20.svg">
 
       <h3 class="editing__title">Profile editing</h3>
 
-      <img alt="closes" src="assets/img/editing/Closes.svg">
+      <img (click)="closeEditing()" alt="closes" src="assets/img/editing/Closes.svg">
     </div>
 
     <div class="editing__photo-container">
@@ -47,4 +47,6 @@
       <button class="btn">Save</button>
     </div>
   </div>
+
+  <div (click)="closeEditing()" class="overlay"></div>
 </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FORM_LABEL } from '../../data/form-data';
+import { ToggleProfileEditing } from '../../servises/toggle-profile-editing';
 
 @Component({
   selector: 'app-profile-editing',
@@ -9,11 +10,11 @@ import { FORM_LABEL } from '../../data/form-data';
 export class ProfileEditingComponent {
 
   label = FORM_LABEL;
-  // labelVisibility: Record<string, boolean> = {
-  //   name: false,
-  //   lastName: false,
-  //   email: false,
-  //   phone: false,
-  //   password: false,
-  // };
+
+  constructor(public toggleProfileEditing: ToggleProfileEditing) {
+  }
+
+  closeEditing(): void {
+    this.toggleProfileEditing.isProfileEditingVisible = false;
+  }
 }

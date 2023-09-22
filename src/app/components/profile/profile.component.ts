@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleProfileEditing } from '../../servises/toggle-profile-editing';
 
 @Component({
   selector: 'app-profile',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.scss'],
 })
 export class ProfileComponent {
-// todo <app-profile-editing></app-profile-editing> on click
+
+  constructor(public toggleProfileEditing: ToggleProfileEditing) {
+  }
+
 }

@@ -16,7 +16,8 @@
       </div>
     </div>
 
-    <img alt="setting" src="assets/img/profile/Setting.svg">
+    <img (click)="toggleProfileEditing.toggleProfileEditing($event)" alt="setting" src="assets/img/profile/Setting.svg">
+    <!--    <app-profile-editing *ngIf="toggleProfileEditing.isProfileEditingVisible"></app-profile-editing>-->
   </div>
 
   <div class="settings__container">
@@ -61,3 +62,5 @@
     </div>
   </div>
 </div>
+
+<app-profile-editing *ngIf="toggleProfileEditing.isProfileEditingVisible"></app-profile-editing>

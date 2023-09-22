@@ -26,6 +26,10 @@
     padding-bottom: 11px;
     padding-left: 127px;
     background-color: #FFFFFF;
+
+    & img {
+      cursor: pointer;
+    }
   }
 
   &__profile {
@@ -90,6 +94,10 @@
     &-text {
       margin: 0;
       font-size: 24px;
+    }
+
+    &-icon {
+      cursor: pointer;
     }
   }
 }
