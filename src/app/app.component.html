@@ -2,6 +2,7 @@
 <a (click)="toggleItem($event)" class="open-item" href="#">Open Item</a>
 <a (click)="toggleHome($event)" class="open-home" href="#">Open Home</a>
 <a (click)="toggleProfile($event)" class="open-profile" href="#">Open Profile</a>
+<a (click)="toggleProductCard($event)" class="open-product-card" href="#">Open Product Card</a>
 
 <app-form-container *ngIf="isFormVisible"></app-form-container>
 
@@ -11,6 +12,7 @@
 
 <app-profile *ngIf="isProfileVisible"></app-profile>
 
+<app-product-card *ngIf="isProductCardVisible"></app-product-card>
+
 <!--<app-profile></app-profile>-->
 
-<app-product-card></app-product-card>
