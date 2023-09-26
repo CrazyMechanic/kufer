@@ -12,6 +12,7 @@ import { ProfileEditingComponent } from './components/profile-editing/profile-ed
 import { TogglePasswordEditing, ToggleProfileEditing } from './servises/toggle-profile-editing';
 import { PasswordEditingComponent } from './components/password-editing/password-editing.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { FavoriteComponent } from './components/favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     ProfileEditingComponent,
     PasswordEditingComponent,
     ProductCardComponent,
+    FavoriteComponent,
   ],
   imports: [
     BrowserModule,

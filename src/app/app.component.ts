@@ -13,6 +13,7 @@ export class AppComponent {
   isHomeVisible: boolean = false;
   isProfileVisible: boolean = false;
   isProductCardVisible: boolean = false;
+  isFavoriteVisible: boolean = false;
 
   toggleForm(event: Event) {
     event.preventDefault();
@@ -39,4 +40,8 @@ export class AppComponent {
     this.isProductCardVisible = !this.isProductCardVisible;
   }
 
+  toggleFavorite(event: Event): void {
+    event.preventDefault();
+    this.isFavoriteVisible = !this.isFavoriteVisible;
+  }
 }
