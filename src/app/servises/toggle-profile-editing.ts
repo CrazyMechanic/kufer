@@ -15,3 +15,12 @@ export class TogglePasswordEditing {
     this.isPasswordEditingVisible = !this.isPasswordEditingVisible;
   }
 }
+
+export class ToggleFilter {
+  public isFilterVisible!: boolean;
+
+  public toggleProfileEditing(event: Event): void {
+    event.preventDefault();
+    this.isFilterVisible = !this.isFilterVisible;
+  }
+}

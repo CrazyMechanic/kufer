@@ -13,6 +13,7 @@ import { TogglePasswordEditing, ToggleProfileEditing } from './servises/toggle-p
 import { PasswordEditingComponent } from './components/password-editing/password-editing.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FavoriteComponent } from './components/favorite/favorite.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FavoriteComponent } from './components/favorite/favorite.component';
     PasswordEditingComponent,
     ProductCardComponent,
     FavoriteComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
