@@ -14,6 +14,7 @@ import { PasswordEditingComponent } from './components/password-editing/password
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FavoriteComponent } from './components/favorite/favorite.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { CategoriesOfProductsComponent } from './components/categories-of-products/categories-of-products.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FilterComponent } from './components/filter/filter.component';
     ProductCardComponent,
     FavoriteComponent,
     FilterComponent,
+    CategoriesOfProductsComponent,
   ],
   imports: [
     BrowserModule,
