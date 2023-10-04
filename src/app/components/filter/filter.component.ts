@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleFilter } from '../../servises/toggle-profile-editing';
 
 @Component({
   selector: 'app-filter',
@@ -7,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
 
-  // constructor(public toggleFilter: ToggleFilter) {
-  // }
-  //
-  // closeFilter(): void {
-  //   this.toggleFilter.isFilterVisible = false;
-  // }
+  constructor(public toggleFilter: ToggleFilter) {
+  }
+
+  closeFilter(): void {
+    this.toggleFilter.isFilterVisible = false;
+  }
 }

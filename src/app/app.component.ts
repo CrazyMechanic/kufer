@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToggleFilter } from './servises/toggle-profile-editing';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,9 @@ export class AppComponent {
   isProfileVisible: boolean = false;
   isProductCardVisible: boolean = false;
   isFavoriteVisible: boolean = false;
+  
+  constructor(public toggleFilter: ToggleFilter) {
+  }
 
   toggleForm(event: Event) {
     event.preventDefault();

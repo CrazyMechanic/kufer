@@ -4,18 +4,40 @@
 <a (click)="toggleProfile($event)" class="open-profile" href="#">Open Profile</a>
 <a (click)="toggleProductCard($event)" class="open-product-card" href="#">Open Product Card</a>
 <a (click)="toggleFavorite($event)" class="open-favorite" href="#">Open Favorite</a>
+<a (click)="toggleFilter.toggleFilter($event)" class="open-filter" href="#">Open Filter</a>
 
-<app-form-container *ngIf="isFormVisible"></app-form-container>
+<!--<app-form-container *ngIf="isFormVisible"></app-form-container>-->
 
-<app-create-an-item *ngIf="isItemVisible"></app-create-an-item>
+<!--<app-create-an-item *ngIf="isItemVisible"></app-create-an-item>-->
 
-<app-home *ngIf="isHomeVisible"></app-home>
+<!--<app-home *ngIf="isHomeVisible"></app-home>-->
 
-<app-profile *ngIf="isProfileVisible"></app-profile>
+<!--<app-profile *ngIf="isProfileVisible"></app-profile>-->
 
-<app-product-card *ngIf="isProductCardVisible"></app-product-card>
+<!--<app-product-card *ngIf="isProductCardVisible"></app-product-card>-->
 
-<app-favorite *ngIf="isFavoriteVisible"></app-favorite>
+<!--<app-favorite *ngIf="isFavoriteVisible"></app-favorite>-->
 
-<!--<app-filter></app-filter>-->
-<app-create-an-item></app-create-an-item>
+<!--<app-filter *ngIf="toggleFilter.isFilterVisible"></app-filter>-->
+
+<router-outlet>
+
+  <!--  <app-home></app-home>-->
+
+  <app-form-container *ngIf="isFormVisible"></app-form-container>
+
+  <app-create-an-item *ngIf="isItemVisible"></app-create-an-item>
+
+  <app-home *ngIf="isHomeVisible"></app-home>
+
+  <app-profile *ngIf="isProfileVisible"></app-profile>
+
+  <app-product-card *ngIf="isProductCardVisible"></app-product-card>
+
+  <app-favorite *ngIf="isFavoriteVisible"></app-favorite>
+
+  <app-filter *ngIf="toggleFilter.isFilterVisible"></app-filter>
+
+</router-outlet>
+
+<app-categories-of-products></app-categories-of-products>

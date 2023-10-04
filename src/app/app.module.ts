@@ -9,7 +9,7 @@ import { FormModule } from './components/forms/form.module';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ProfileEditingComponent } from './components/profile-editing/profile-editing.component';
-import { TogglePasswordEditing, ToggleProfileEditing } from './servises/toggle-profile-editing';
+import { ToggleFilter, TogglePasswordEditing, ToggleProfileEditing } from './servises/toggle-profile-editing';
 import { PasswordEditingComponent } from './components/password-editing/password-editing.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FavoriteComponent } from './components/favorite/favorite.component';
@@ -38,6 +38,7 @@ import { CategoriesOfProductsComponent } from './components/categories-of-produc
   providers: [
     ToggleProfileEditing,
     TogglePasswordEditing,
+    ToggleFilter,
   ],
   bootstrap: [AppComponent],
   exports: [],

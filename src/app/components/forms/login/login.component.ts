@@ -8,4 +8,6 @@ import { FORM_PLACEHOLDERS } from '../../../data/form-data';
 })
 export class LoginComponent {
   placeholder = FORM_PLACEHOLDERS;
+
+//   TODO hash почему то логин стоит и в роутере открывает логин
 }

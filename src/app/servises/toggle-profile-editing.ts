@@ -19,7 +19,7 @@ export class TogglePasswordEditing {
 export class ToggleFilter {
   public isFilterVisible!: boolean;
 
-  public toggleProfileEditing(event: Event): void {
+  public toggleFilter(event: Event): void {
     event.preventDefault();
     this.isFilterVisible = !this.isFilterVisible;
   }

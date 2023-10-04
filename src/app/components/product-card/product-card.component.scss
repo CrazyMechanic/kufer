@@ -8,6 +8,37 @@
   padding-top: 40px;
   background-color: #FFFFFF;
 
+  &__navigate {
+    width: 1252px;
+    margin-inline: auto;
+    display: flex;
+    gap: 4px;
+    font-size: 24px;
+    font-weight: 400;
+
+    & p {
+      margin: 0;
+    }
+
+    &-container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #F9F9F9;
+    }
+
+    &-item {
+      color: #042C54;
+
+      &:last-of-type {
+        color: rgba(7, 10, 15, 0.50);
+      }
+    }
+
+    &-img {
+      width: 20px;
+    }
+  }
+
   &__container {
     background-color: #F9F9F9;
     padding-bottom: 160px;
