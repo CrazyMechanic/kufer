@@ -32,14 +32,25 @@
       To use your account, you must first sign up or log in.</p>
   </div>
 
-  <div class="action__container">
-    <a [ngClass]="{ 'active-bg': isSignUpActive }" [routerLinkActive]="'active'" [routerLink]="['sign-up']"
-       class="action"
-       id="action__signup">Sign Up</a>
+  <!--  <div class="action__container">-->
+  <!--    <a [ngClass]="{ 'active-bg': isSignUpActive }" [routerLinkActive]="'active'" [routerLink]="['sign-up']"-->
+  <!--       class="action"-->
+  <!--       id="action__signup">Sign Up</a>-->
 
-    <a [ngClass]="{ 'active-bg': isLoginActive }" [routerLinkActive]="'active'" [routerLink]="['login']" class="action"
+  <!--    <a [ngClass]="{ 'active-bg': isLoginActive }" [routerLinkActive]="'active'" [routerLink]="['login']" class="action"-->
+  <!--       id="action__login">Login</a>-->
+  <!--  </div>-->
+
+  <div class="action__container">
+    <a (click)="toggleSignUp($event)" [ngClass]="{ 'active-bg': isSignUpVisible }" class="action" id="action__signup">Sign
+      Up</a>
+
+    <a (click)="toggleLogin($event)" [ngClass]="{ 'active-bg': isLoginVisible }" class="action"
        id="action__login">Login</a>
   </div>
 
-  <router-outlet></router-outlet>
+  <router-outlet>
+    <app-sign-up *ngIf="isSignUpVisible"></app-sign-up>
+    <app-login *ngIf="isLoginVisible"></app-login>
+  </router-outlet>
 </div>

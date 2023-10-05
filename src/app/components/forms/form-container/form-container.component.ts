@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-container',
@@ -13,15 +12,32 @@ import { NavigationEnd, Router } from '@angular/router';
   `],
 })
 export class FormContainerComponent {
-  isSignUpActive: boolean = false;
-  isLoginActive: boolean = false;
+  // isSignUpActive: boolean = false;
+  // isLoginActive: boolean = false;
 
-  constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.isSignUpActive = event.url === '/sign-up';
-        this.isLoginActive = event.url === '/login';
-      }
-    });
+  isSignUpVisible: boolean = false;
+  isLoginVisible: boolean = true;
+
+  // isLoginVisible: boolean = false;
+
+  toggleSignUp(event: Event) {
+    event.preventDefault();
+    this.isSignUpVisible = !this.isSignUpVisible;
+    this.isLoginVisible = false;
   }
+
+  toggleLogin(event: Event) {
+    event.preventDefault();
+    this.isLoginVisible = !this.isLoginVisible;
+    this.isSignUpVisible = false;
+  }
+
+  // constructor(private router: Router) {
+  //   this.router.events.subscribe((event) => {
+  //     if (event instanceof NavigationEnd) {
+  //       this.isSignUpActive = event.url === '/sign-up';
+  //       this.isLoginActive = event.url === '/login';
+  //     }
+  //   });
+  // }
 }
